@@ -6,4 +6,4 @@
 
 Link untuk mendownload https://ubuntu.com/download/server lalu klik "option 2 - Manual server installation"
 
-![Img 1](assets/1.jpg)
+![Img 1](assets/1.JPG)
