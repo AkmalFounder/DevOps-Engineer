@@ -1,4 +1,4 @@
-# Day 4
+# Day 5
 Setelah mempelajari terkait CI/CD serta melakukan konfigurasi CI/CD menggunakan Cloudflare Pages, maka silakan jalankan aplikasi dengan ketentuan yang di berikan
 
 ## Project Management
