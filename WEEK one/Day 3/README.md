@@ -1,15 +1,14 @@
-# Day 2
-Konfigurasi jaringan, hingga tunneling
+# Day 3
+Setelah mempelajari terkait cara menjalankan aplikasi NodeJS, Python, dan Go, maka Kita akan mendeploy aplikasi
 
 ## Project Management
 
-Konfigurasi IP server dari IP lama ke IP baru, kemudian melakukan instalasi web server apache2 hingga dapat di akses secara public dengan localtunnel
+Instal semua kebutuhan aplikasi yang dibangun dengan NodeJS, Python dan Go hingga aplikasi tersebut dapat di akses melalui web browser.
 
-- [ ] Definisikan apa itu Computer Network menurut pemahamanmu
-- [ ] Buatlah daftar perintah linux yang membantumu untuk memanagement linux server
-- [ ] Ganti IP server lama menjadi IP server baru
-- [ ] Lakukan remote server tersebut menggunakan IP baru
-- [ ] Install aplikasi web server apache di linux server
-- [ ] Akses aplikasi web server apache2 menggunakan browser melalui IP
-- [ ] Buatlah localtunnel pada web server apache2
-- [ ] Akses aplikasi web server apache2 menggunakan localtunnel lewat HP
+- [ ] Definisikan apa itu Application menurut pemahamanmu
+- [ ] Buatlah sebuah aplikasi sederhana menggunakan NodeJS, Python dan Go
+- [ ] Siapkan environment untuk aplikasi NodeJS, Python dan Go
+- [ ] Jalankan aplikasi NodeJS, Python dan Go pada server dan pastikan dapat di akses
+- [ ] Aplikasi yang sudah berhasil di akses, perlu untuk dikonfigurasi agar dapat berjalan secara daemon menggunakan PM2
+- [ ] Gunakan localtunnel agar aplikasi tersebut dapat di akses secara publik
+- [ ] Aplikasi yang sudah berhasil di konfigurasi dengan PM2 wajib dapat di akses melalui web browser

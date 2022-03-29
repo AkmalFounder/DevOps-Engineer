@@ -112,7 +112,7 @@ Tampilan Browser PC:
 
 Tampilan Browser HP:
 
-![Img 1](assets/14.JPG)
+![Img 1](assets/14.jpeg)
 
 # BRAVOOO ANDA TELAH BERHASIL !
 
