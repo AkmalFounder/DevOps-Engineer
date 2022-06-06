@@ -1,9 +1,9 @@
-    #Jalankan 1 aplikasi yang sama pada 2 buah server
-    #Buatlah sebuah konfigurasi reverse proxy pada server gateway (nginx)
-    #Buatlah sebuah konfigurasi load balancing pada server gateway (nginx)
-    #Aplikasi dapat di akses menggunakan domain virtual dan otomatis load balance ke 2 aplikasi tersebut
+    Jalankan 1 aplikasi yang sama pada 2 buah server
+    Buatlah sebuah konfigurasi reverse proxy pada server gateway (nginx)
+    Buatlah sebuah konfigurasi load balancing pada server gateway (nginx)
+    Aplikasi dapat di akses menggunakan domain virtual dan otomatis load balance ke 2 aplikasi tersebut
     
-    #Tambahkan deskripsi berikut ke dalam kanban pada project management Anda
+    Tambahkan deskripsi berikut ke dalam kanban pada project management Anda
     
     Konfigurasi web server dengan reverse proxy dan load balancing hingga dapat di akses melalui browser.
 
