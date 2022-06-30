@@ -2,7 +2,7 @@
 
 ## REPOSITORY
 
-![image](assets/0.jpg)
+![image](assets/0.png)
 
 - Repositori Git melacak dan menyimpan riwayat semua perubahan yang dibuat pada file dalam proyek Git. Ini menyimpan data ini dalam direktori bernama .git, juga dikenal sebagai folder repositori.
 
