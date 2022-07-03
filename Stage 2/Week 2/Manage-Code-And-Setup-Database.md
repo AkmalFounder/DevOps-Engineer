@@ -373,7 +373,7 @@ Sebelum mengoneksikan aplikasi frontend dan backend kita perlu mengatur domain u
 
 Disini saya menggunakan domain dari [CloudFlare](cloudflare.com) , ke menu dns dan buat domain
 
-Domain yang saya buat untuk backend yaitu api.alfino.studentdumbways.my.id 
+Domain yang saya buat untuk backend yaitu api.akmal.studentdumbways.my.id 
 
 Kemudian saya akan membuat reverse proxy untuk server backend menggunakan domain api.akmal.studentdumbways.my.id 
 
