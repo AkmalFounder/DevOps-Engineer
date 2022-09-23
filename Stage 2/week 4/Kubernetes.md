@@ -1,6 +1,6 @@
 # Kubernetes 
 
-//![image]()
+
 
 Kubernetes adalah platform open source untuk mengelola kumpulan kontainer dalam suatu cluster server. Platform ini pertama kali dikembangkan oleh Google dan kini dikelola oleh Cloud Native Computing Foundation (CNCF) sebagai platform manajemen kontainer yang cukup populer.
 
@@ -8,7 +8,7 @@ Kontainer sendiri adalah environment dengan sumber daya, CPU, dan sistem file un
 
 Atau singkatnya KUBERNETES itu adalah salah satu aplikasi opensource  untuk automation scaling dan manajemen aplikasi berbasis container
 
-//![image]()
+
 
 Untuk konsep cara kerja dari kubernetes adalah seperti di atas atau spesifiknya :
 
