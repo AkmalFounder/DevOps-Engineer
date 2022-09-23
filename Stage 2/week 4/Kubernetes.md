@@ -54,20 +54,19 @@ Ingress: Merupakan cara untuk supaya aplikasi dapat diakses menggunakan http / h
 
 Sebelumnya apa itu Microservices? Microservices adalah kebalikannya dari Monolith, dimana aplikasi dipecah menjadi kecil-kecil, dimana tiap aplikasi hanya mengurus satu tugas dengan baik, dan semua aplikasi saling berkomunikasi.
 
-Sekarang saya akan mempersiapakan 3 server (1 Manager / sebagai controller) , (1 Worker) dari [IdCloudHost](idcloudhost.com)
+Sekarang saya akan mempersiapakan 2 server (1 Manager / sebagai controller) , (1 Worker) dari [IdCloudHost](idcloudhost.com)
 
-//![image]()
+
 
 
 Untuk Manager saya gunakan CPU 2 Core, RAM 2 GB, SSD 20 GB
 
 Untuk masing-masing worker saya gunakan CPU 1 Core, RAM 1GB, SSD 20 GB
 
-//![image]()
+
 
 Tunggu hingga proses building selesai ...
 
-![image](https://user-images.githubusercontent.com/106061407/175208197-ee22d02f-0447-475d-94ea-6941e2ac3dd5.png)
 
 Test login menggunakan terminal
 
@@ -77,7 +76,7 @@ Test login menggunakan terminal
 
 Sebelum melakukan instalasi kubernetes diwajibkan terlebih dahulu untuk NON-Aktifkan firewall dan SWAP
 
-//![image]()
+
 ```
 ufw disable
 ```
@@ -88,7 +87,7 @@ swapoff -a; sed -i '/swap/d' /etc/fstab
 
 kemudian kita perlu juga update kernel
 
-//![image]()
+
 
 ```
 cat >>/etc/sysctl.d/kubernetes.conf<<EOF
@@ -99,7 +98,7 @@ EOF
 
 Kemudian Restart system
 
-//![image]()
+
 
 ```
 sysctl --system
@@ -115,7 +114,7 @@ Untuk Instalasi docker kalian dapat ikuti tutorial di bawah ini :
 
 [Install Docker Compose](https://docs.docker.com/compose/install/)
 
-//![image]()
+
 
 Saat ini saya gunakan Docker Version:  20.10.7
 
@@ -123,7 +122,7 @@ Saat ini saya gunakan Docker Version:  20.10.7
 
 Selanjutnya saya akan konfigurasi docker daemon
 
-//![image]()
+
 
 ```
 cat <<EOF | sudo tee /etc/docker/daemon.json
@@ -140,7 +139,7 @@ EOF
 
 Lalu restart docker
 
-//![image]()
+
 
 ```
 sudo systemctl enable docker
@@ -148,13 +147,13 @@ sudo systemctl daemon-reload
 sudo systemctl restart docker
 ```
 
-//![image]()
+
 
 -----------------------------------------------
 
 Selanjutnya Instalasi Kubernetes dan sekaligus install kubelet kubeadm kubectl
 
-//![image]()
+
 
 ```
 sudo apt-get update && sudo apt-get install -y apt-transport-https curl
@@ -165,7 +164,7 @@ EOF
 sudo apt-get update
 ```
 
-//![image]()
+
 
 
 ```
@@ -179,7 +178,7 @@ sudo systemctl restart kubelet
 
 Konfigurasi kubeadm
 
-//![image]()
+
 
 
 ```
@@ -192,7 +191,7 @@ Untuk versi Kubernates yang saya pakai yaitu versi: v1.24.2
 
 Konfigurasi kubernetes agar dapat menjalankan perintah
 
-//![image]()
+
 
 ```
 mkdir -p $HOME/.kube
@@ -204,7 +203,7 @@ Selanjutnya kita harus deploy Container Network Interface (CNI) yang berbasis ad
 
 Deploy Add-on Pod Network Calico :
 
-//![image]()
+
 
 
 KETERANGAN : GUNAKAN Container Network Interface (CNI) CALICO VERSI TERBARU [PROJECTCALICO](https://projectcalico.docs.tigera.io/getting-started/kubernetes/self-managed-onprem/onpremises)
@@ -215,7 +214,7 @@ kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
 
 Mengecek semua pods gunakan perintah
 
-//![image]()
+
 
 
 
@@ -225,7 +224,7 @@ kubectl get pods --all-namespaces
 
 Lalu lakukan join cluster dengan perintah berikut 
 
-//![image]()
+)
 
 ```
 kubeadm token create --print-join-command
@@ -237,17 +236,17 @@ NOTE : INSTALL DAHULU KUBERNATES DENGAN VERSI YANG SAMA !!!
 
 Copy pada kedua worker
 
-//![image]()
+
 
 [WORKER 1]
 
-//![image]()
+
 
 [WORKER 2]
 
 Kemudian cek koneksi nodes menggunakan perintah
 
-//![image]()
+
 
 ```
 kubectl get nodes
@@ -257,7 +256,7 @@ kubectl get nodes
 
 Kemudian saya akan mendeploy nginx 
 
-//![image]()
+
 
 ```
 kubectl create deploy nginx --image nginx
@@ -285,4 +284,4 @@ Nginx berjalan pada worker 2  http://103.186.1.51:31324/
 
 Selanjutnya saya akan cek pada web browser
 
-//![image]()
+
