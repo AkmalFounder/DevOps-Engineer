@@ -9,7 +9,6 @@
 ```
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
-![App Screenshot](https://github.com/AkmalFounder/DevOps-Engineer/blob/main/WEEK%20one/Day%202/assets/10.JPG)
 
 Akan muncul sebagai berikut lalu ubah IP nya
 
